@@ -227,6 +227,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Not
     <div class="stat">📅 最新 <strong>{latest_date}</strong></div>
     <div class="stat">🌏 覆蓋 <strong>{len(regions)}</strong> 個地區</div>
     <div class="stat">🔄 更新於 <strong>{now}</strong></div>
+    <div class="stat"><a href="http://100.118.162.26:5000/" style="color:white;text-decoration:none">💬 AI Chat</a></div>
   </div>
 </div>
 
