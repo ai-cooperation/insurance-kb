@@ -187,7 +187,11 @@ def main():
         new_count = update_index(processed_articles)
         logger.info(f"索引更新: {new_count} 新增")
 
-    # Phase 4: Git push
+    # Phase 4: Build site + Git push
+    if processed_articles:
+        from build_site import build_site
+        build_site()
+
     if not args.no_push and processed_articles:
         git_commit_push()
 
