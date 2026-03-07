@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 """
-保險知識庫自動爬取主程式
-用法:
-  python3 run.py              # 全量爬取
-  python3 run.py --http-only  # 只跑 HTTP 來源（快速測試）
-  python3 run.py --rss-only   # 只跑 RSS
-  python3 run.py --source air_news  # 單一來源測試
-  python3 run.py --dry-run    # 只爬取不處理不推送
+保險知識庫自動爬取主程式 v4
+新增：三層驗證機制 + 截圖爬蟲 fallback + Gemini 補漏
 """
 
 import argparse
@@ -32,7 +27,7 @@ if env_path.exists():
             k, v = line.split("=", 1)
             os.environ.setdefault(k.strip(), v.strip())
 
-# Telegram 設定 (insurance-kb 專用)
+# Telegram 設定
 os.environ.setdefault("TG_BOT_TOKEN", os.environ.get("TELEGRAM_BOT_TOKEN", ""))
 os.environ.setdefault("TG_CHAT_ID", os.environ.get("TELEGRAM_CHAT_ID", ""))
 
@@ -40,7 +35,9 @@ from src.sources import SOURCES, get_sources_by_method
 from src.crawler import crawl_source, Deduplicator
 from src.ai_processor import process_article, get_interval
 from src.md_generator import generate_md, update_index, git_commit_push
-from src.health_report import generate_health_report, ai_gap_scan, send_telegram_report
+from src.health_report import generate_health_report, send_telegram_report
+from src.verifier import verify_batch, audit_completeness, gemini_gap_scan
+from src.screenshot_crawler import crawl_with_screenshot
 
 logging.basicConfig(
     level=logging.INFO,
@@ -53,24 +50,28 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 TZ_UTC8 = timezone(timedelta(hours=8))
 
+# 截圖 fallback 候選：當 Playwright/HTTP 爬取失敗時用截圖+Vision
+SCREENSHOT_FALLBACK_SOURCES = {"swissre_media"}
+
 
 def main():
     parser = argparse.ArgumentParser(description="保險知識庫自動爬取")
-    parser.add_argument("--http-only", action="store_true", help="只跑 HTTP 來源")
-    parser.add_argument("--rss-only", action="store_true", help="只跑 RSS 來源")
-    parser.add_argument("--playwright-only", action="store_true", help="只跑 Playwright 來源")
-    parser.add_argument("--source", type=str, help="單一來源 ID")
-    parser.add_argument("--dry-run", action="store_true", help="只爬取，不做 AI 處理和推送")
-    parser.add_argument("--no-push", action="store_true", help="不推送到 GitHub")
-    parser.add_argument("--no-ai", action="store_true", help="跳過 AI 處理")
-    parser.add_argument("--limit", type=int, default=0, help="每個來源最多處理 N 篇")
+    parser.add_argument("--http-only", action="store_true")
+    parser.add_argument("--rss-only", action="store_true")
+    parser.add_argument("--playwright-only", action="store_true")
+    parser.add_argument("--source", type=str)
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--no-push", action="store_true")
+    parser.add_argument("--no-ai", action="store_true")
+    parser.add_argument("--no-verify", action="store_true", help="跳過驗證層")
+    parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()
 
     start_time = time.time()
     logger.info("=" * 60)
     logger.info(f"開始爬取 {datetime.now(TZ_UTC8).strftime('%Y-%m-%d %H:%M')}")
 
-    # 決定要爬哪些來源
+    # 決定來源
     if args.source:
         sources = [s for s in SOURCES if s["id"] == args.source]
         if not sources:
@@ -89,14 +90,14 @@ def main():
                 f" playwright={len([s for s in sources if s['method']=='playwright'])},"
                 f" rss={len([s for s in sources if s['method']=='rss'])})")
 
-    # 去重器
     dedup = Deduplicator(ROOT / "data" / "seen.json")
 
-    # Phase 1: 爬取
+    # ===== Phase 1: 爬取（Layer 1）=====
     all_health = []
     all_new_articles = defaultdict(list)
     total_new = 0
     total_dup = 0
+    screenshot_fallback_used = []
 
     for i, source in enumerate(sources, 1):
         sid = source["id"]
@@ -104,6 +105,17 @@ def main():
 
         results, health = crawl_source(source)
         all_health.append(health)
+
+        # 截圖 fallback：爬取失敗或結果為 0 時嘗試截圖+Vision
+        if (health.get("status") != "ok" or health.get("count", 0) == 0) and sid in SCREENSHOT_FALLBACK_SOURCES:
+            logger.info(f"  嘗試截圖 fallback: {sid}")
+            ss_results, ss_health = crawl_with_screenshot(source)
+            if ss_results:
+                results = ss_results
+                health = ss_health
+                all_health[-1] = health
+                screenshot_fallback_used.append(sid)
+                logger.info(f"  截圖 fallback 成功: {len(ss_results)} items")
 
         new_items = []
         for r in results:
@@ -136,16 +148,18 @@ def main():
 
     dedup.save()
     logger.info(f"爬取完成: {total_new} 新文章, {total_dup} 重複")
+    if screenshot_fallback_used:
+        logger.info(f"截圖 fallback 使用: {screenshot_fallback_used}")
 
     if args.dry_run:
         _print_summary(all_new_articles, all_health)
         return
 
-    # Phase 2: AI 處理（單篇模式，動態間隔避免 rate limit）
+    # ===== Phase 2: AI 處理 =====
     processed_articles = []
     if not args.no_ai and total_new > 0:
         flat_articles = []
-        for sid, articles in all_new_articles.items():
+        for articles in all_new_articles.values():
             flat_articles.extend(articles)
 
         logger.info(f"AI 處理: {len(flat_articles)} 篇（單篇模式，動態間隔）")
@@ -177,7 +191,30 @@ def main():
                 })
                 processed_articles.append(a)
 
-    # Phase 3: 生成 MD + 更新索引
+    # ===== Phase 3: 三層驗證（Layer 2 + 3）=====
+    verification_stats = None
+    audit_result = None
+    gap_scan = None
+
+    if not args.no_verify and processed_articles:
+        # Layer 2: AI 輸出驗證
+        logger.info("Layer 2: AI 輸出驗證...")
+        verification_stats = verify_batch(processed_articles)
+
+        # Layer 3: 完整性審計
+        logger.info("Layer 3: 完整性審計...")
+        audit_result = audit_completeness(processed_articles, all_health)
+
+        # Gemini 智慧補漏（取代 Groq API）
+        if not args.no_ai:
+            logger.info("Gemini 補漏掃描...")
+            gap_scan = gemini_gap_scan(processed_articles)
+            if gap_scan:
+                logger.info(f"  覆蓋率: {gap_scan.get('coverage_score', '?')}%")
+                for gap in gap_scan.get("gaps", [])[:3]:
+                    logger.info(f"  缺口: {gap}")
+
+    # ===== Phase 4: 生成 MD + 更新索引 =====
     if processed_articles:
         logger.info("生成 Markdown...")
         for article in processed_articles:
@@ -187,7 +224,7 @@ def main():
         new_count = update_index(processed_articles)
         logger.info(f"索引更新: {new_count} 新增")
 
-    # Phase 4: Build site + Git push
+    # ===== Phase 5: Build site + Git push =====
     if processed_articles:
         from build_site import build_site
         build_site()
@@ -195,14 +232,21 @@ def main():
     if not args.no_push and processed_articles:
         git_commit_push()
 
-    # Phase 5: 健康度報告 + AI 補漏
+    # ===== Phase 6: 健康度報告 + Telegram =====
     report = generate_health_report(all_health, all_new_articles)
-    gap_result = None
-    if not args.no_ai and total_new > 0:
-        gap_result = ai_gap_scan(all_new_articles, all_health)
 
-    # Phase 6: Telegram 報告
-    send_telegram_report(report, gap_result)
+    # 合併驗證結果到報告
+    if verification_stats:
+        report["verification"] = {
+            "valid": verification_stats["valid"],
+            "fixed": verification_stats["fixed"],
+            "invalid": verification_stats["invalid"],
+        }
+    if audit_result:
+        report["audit_coverage"] = audit_result.get("coverage_score", 0)
+        report["audit_gaps"] = audit_result.get("gaps", [])
+
+    send_telegram_report(report, gap_scan)
 
     elapsed = time.time() - start_time
     logger.info(f"全部完成! 耗時 {elapsed:.0f} 秒")

@@ -89,8 +89,8 @@ def _generate_html(articles, by_date, dates, total, regions, categories, latest_
             cat_icon = CATEGORY_ICONS.get(category, "📄")
             title = _esc(a.get("title", "無標題"))
             summary = _esc(a.get("summary", ""))
-            # Preview: first 60 chars for card face
-            preview = summary[:80] + "..." if len(summary) > 80 else summary
+            # Preview: first 200 chars for card face
+            preview = summary[:200] + "..." if len(summary) > 200 else summary
             source = _esc(a.get("source", ""))
             url = _esc(a.get("source_url", "#"))
             keywords = a.get("keywords", [])
