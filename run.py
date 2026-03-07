@@ -7,11 +7,9 @@
   python3 run.py --rss-only   # 只跑 RSS
   python3 run.py --source air_news  # 單一來源測試
   python3 run.py --dry-run    # 只爬取不處理不推送
-  python3 run.py --batch      # 批次 AI 處理（省 token）
 """
 
 import argparse
-import json
 import logging
 import os
 import sys
@@ -39,8 +37,8 @@ os.environ.setdefault("TG_BOT_TOKEN", os.environ.get("TELEGRAM_BOT_TOKEN", ""))
 os.environ.setdefault("TG_CHAT_ID", os.environ.get("TELEGRAM_CHAT_ID", ""))
 
 from src.sources import SOURCES, get_sources_by_method
-from src.crawler import crawl_source, Deduplicator, CrawlResult
-from src.ai_processor import process_article, process_batch
+from src.crawler import crawl_source, Deduplicator
+from src.ai_processor import process_article, get_interval
 from src.md_generator import generate_md, update_index, git_commit_push
 from src.health_report import generate_health_report, ai_gap_scan, send_telegram_report
 
@@ -65,8 +63,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="只爬取，不做 AI 處理和推送")
     parser.add_argument("--no-push", action="store_true", help="不推送到 GitHub")
     parser.add_argument("--no-ai", action="store_true", help="跳過 AI 處理")
-    parser.add_argument("--batch", action="store_true", help="批次 AI 處理（省 token）")
-    parser.add_argument("--batch-size", type=int, default=5, help="批次大小（預設 5）")
     parser.add_argument("--limit", type=int, default=0, help="每個來源最多處理 N 篇")
     args = parser.parse_args()
 
@@ -145,18 +141,31 @@ def main():
         _print_summary(all_new_articles, all_health)
         return
 
-    # Phase 2: AI 處理
+    # Phase 2: AI 處理（單篇模式，動態間隔避免 rate limit）
     processed_articles = []
     if not args.no_ai and total_new > 0:
-        # 收集所有文章到一個 flat list
         flat_articles = []
         for sid, articles in all_new_articles.items():
             flat_articles.extend(articles)
 
-        if args.batch:
-            processed_articles = _ai_batch_mode(flat_articles, args.batch_size)
-        else:
-            processed_articles = _ai_single_mode(flat_articles)
+        logger.info(f"AI 處理: {len(flat_articles)} 篇（單篇模式，動態間隔）")
+        for i, article in enumerate(flat_articles, 1):
+            crawl = article["crawl"]
+            source = article["source"]
+            ai_result = process_article(
+                title=crawl["title"],
+                snippet=crawl.get("snippet", ""),
+                source_name=source["name"],
+                source_region=source.get("region", ""),
+            )
+            article["ai"] = ai_result
+            processed_articles.append(article)
+
+            if i % 20 == 0:
+                logger.info(f"  AI 進度: {i}/{len(flat_articles)}")
+
+            interval = get_interval()
+            time.sleep(interval)
 
         logger.info(f"AI 處理完成: {len(processed_articles)} 篇")
     else:
@@ -193,54 +202,6 @@ def main():
 
     elapsed = time.time() - start_time
     logger.info(f"全部完成! 耗時 {elapsed:.0f} 秒")
-
-
-def _ai_single_mode(articles):
-    """逐篇 AI 處理，自動 fallback 到其他模型"""
-    logger.info(f"AI 單篇模式: {len(articles)} 篇待處理")
-    processed = []
-    for i, article in enumerate(articles, 1):
-        crawl = article["crawl"]
-        source = article["source"]
-        ai_result = process_article(
-            title=crawl["title"],
-            snippet=crawl.get("snippet", ""),
-            source_name=source["name"],
-            source_region=source.get("region", ""),
-        )
-        article["ai"] = ai_result
-        processed.append(article)
-
-        if i % 10 == 0:
-            logger.info(f"  AI 進度: {i}/{len(articles)}")
-        time.sleep(2)  # Rate limit buffer
-
-    return processed
-
-
-def _ai_batch_mode(articles, batch_size=5):
-    """批次 AI 處理，每次送 batch_size 篇，大幅省 token"""
-    logger.info(f"AI 批次模式: {len(articles)} 篇, batch_size={batch_size}")
-
-    batch_input = []
-    for article in articles:
-        crawl = article["crawl"]
-        source = article["source"]
-        batch_input.append({
-            "title": crawl["title"],
-            "snippet": crawl.get("snippet", ""),
-            "source_name": source["name"],
-            "source_region": source.get("region", ""),
-        })
-
-    results = process_batch(batch_input, batch_size=batch_size)
-
-    processed = []
-    for article, ai_result in zip(articles, results):
-        article["ai"] = ai_result
-        processed.append(article)
-
-    return processed
 
 
 def _print_summary(all_articles, all_health):
