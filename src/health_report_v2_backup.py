@@ -19,7 +19,7 @@ GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 TZ_UTC8 = timezone(timedelta(hours=8))
 DATA_DIR = Path(__file__).parent.parent / "data"
 
-PAGES_URL = "https://cooperation.tw/insurance-kb/"
+PAGES_URL = "https://insurance-kb.cooperation.tw/cards"
 
 
 def generate_health_report(health_results, crawl_results):

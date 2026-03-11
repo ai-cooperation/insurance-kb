@@ -103,6 +103,9 @@ def crawl_http(source):
     try:
         resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
         resp.raise_for_status()
+        # 強制 UTF-8 避免中文網站亂碼
+        if resp.apparent_encoding and resp.apparent_encoding.lower() != resp.encoding.lower():
+            resp.encoding = resp.apparent_encoding
     except requests.RequestException as e:
         logger.error(f"[{source_id}] HTTP failed: {e}")
         return [], {"status": "error", "error": str(e)}

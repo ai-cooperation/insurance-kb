@@ -231,8 +231,6 @@ def main():
 
     if not args.no_push and processed_articles:
         git_commit_push()
-        # 等待 GitHub Pages 部署完成再發通知
-        _wait_for_pages_deploy()
 
     # ===== Phase 6: 健康度報告 + Telegram =====
     report = generate_health_report(all_health, all_new_articles)
@@ -252,27 +250,6 @@ def main():
 
     elapsed = time.time() - start_time
     logger.info(f"全部完成! 耗時 {elapsed:.0f} 秒")
-
-
-def _wait_for_pages_deploy(max_wait=120, interval=15):
-    """等待 GitHub Pages 部署完成，確認頁面可存取"""
-    import requests as req
-    pages_url = "https://insurance-kb.cooperation.tw/cards"
-    logger.info(f"等待 GitHub Pages 部署... (最多 {max_wait}s)")
-    waited = 0
-    while waited < max_wait:
-        time.sleep(interval)
-        waited += interval
-        try:
-            resp = req.get(pages_url, timeout=10)
-            if resp.status_code == 200:
-                logger.info(f"Pages 部署確認 ({waited}s)")
-                return True
-        except Exception:
-            pass
-        logger.info(f"  Pages 尚未就緒... ({waited}s)")
-    logger.warning(f"Pages 部署等待超時 ({max_wait}s)，仍發送通知")
-    return False
 
 
 def _print_summary(all_articles, all_health):
