@@ -37,7 +37,8 @@ def build_site():
         print("No index found")
         return
 
-    articles = json.loads(index_path.read_text(encoding="utf-8"))
+    all_articles = json.loads(index_path.read_text(encoding="utf-8"))
+    articles = [a for a in all_articles if not a.get("filter")]
     articles.sort(key=lambda a: a.get("date", ""), reverse=True)
 
     by_date = defaultdict(list)

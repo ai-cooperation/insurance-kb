@@ -144,6 +144,7 @@ class RAGEngine:
             logger.error(f"Index not found: {self.index_path}")
             return
         self.articles = json.loads(self.index_path.read_text(encoding="utf-8"))
+        self.articles = [a for a in self.articles if not a.get("filter")]
         logger.info(f"Loaded {len(self.articles)} articles")
         for article in self.articles:
             text = self._article_to_text(article)

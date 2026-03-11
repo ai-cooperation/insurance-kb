@@ -36,6 +36,10 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') [START] Cron job started" >> "$CRON_LOG"
 /usr/bin/python3 run.py >> "$CRON_LOG" 2>&1
 EXIT_CODE=$?
 
+# 內容過濾：標記非保險相關文章（filter 失敗不影響整體退出碼）
+echo "$(date '+%Y-%m-%d %H:%M:%S') [FILTER] Running content filter" >> "$CRON_LOG"
+/usr/bin/python3 content_filter.py --today-only >> "$CRON_LOG" 2>&1 || echo "$(date '+%Y-%m-%d %H:%M:%S') [FILTER] Filter failed (non-critical)" >> "$CRON_LOG"
+
 echo "$(date '+%Y-%m-%d %H:%M:%S') [END] Exit code: $EXIT_CODE" >> "$CRON_LOG"
 
 # 失敗通知
