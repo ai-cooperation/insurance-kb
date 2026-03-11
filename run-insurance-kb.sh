@@ -40,6 +40,18 @@ EXIT_CODE=$?
 echo "$(date '+%Y-%m-%d %H:%M:%S') [FILTER] Running content filter" >> "$CRON_LOG"
 /usr/bin/python3 content_filter.py --today-only >> "$CRON_LOG" 2>&1 || echo "$(date '+%Y-%m-%d %H:%M:%S') [FILTER] Filter failed (non-critical)" >> "$CRON_LOG"
 
+# 過濾後重建靜態頁面並推送（確保 Card View 反映 filter 結果）
+echo "$(date '+%Y-%m-%d %H:%M:%S') [REBUILD] Rebuilding site after filter" >> "$CRON_LOG"
+/usr/bin/python3 build_site.py >> "$CRON_LOG" 2>&1
+if git diff --quiet docs/index.html 2>/dev/null; then
+    echo "$(date '+%Y-%m-%d %H:%M:%S') [REBUILD] No changes to Card View" >> "$CRON_LOG"
+else
+    git add docs/index.html index/master-index.json
+    git commit -m "chore: update filtered articles $(date +%Y-%m-%d)" >> "$CRON_LOG" 2>&1
+    git push >> "$CRON_LOG" 2>&1
+    echo "$(date '+%Y-%m-%d %H:%M:%S') [REBUILD] Pushed filtered Card View" >> "$CRON_LOG"
+fi
+
 echo "$(date '+%Y-%m-%d %H:%M:%S') [END] Exit code: $EXIT_CODE" >> "$CRON_LOG"
 
 # 失敗通知
