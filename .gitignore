@@ -5,3 +5,4 @@ __pycache__/
 .env
 index/master-index.backup_*.json
 data/chat.db
+reports/
