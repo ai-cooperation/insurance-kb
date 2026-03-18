@@ -1,17 +1,17 @@
 ---
-id: "a71cc1f6020e"
+id: "37a5f382d57e"
 title: "美國銀行同意與Jeffrey Epstein案件和解"
 date: "2026-03-18"
 source: "GNews: WSJ 保險"
-source_url: "https://news.google.com/rss/articles/CBMivwNBVV95cUxPODEtdjI2VlNJVGhkT0lhbFFZOEo1Yy1Ncm9CNjRqc3c1RVFZVHg4MmJpeU9pQ3BXZ2xRWjAya1FxSnozYlplS1dCdEp1VVN0cVphenUydFp5MWVWMnVoYW5kMGw5NWNmRkdXZWlSUlZKUHRoeFJGLXdKYVlXZ1lZN0hOa1VuREJMa2JzT3hnWkhpN3VyVzZXQl9Va2Y5NU1MdlJyM2NVRzdBeEVoakp1djUtdHRNRzFBcmNCZ0FxZzdtaFN2UVEydmptS21FdXFwVnpuX1pfZy1lMHBxVXJ1RGw2TzgwNlNTcWYyTGVObGhKX3B3ejQwVV9NRDlXeURabXUwU2N2VXYyZ2dfR0ZjTjZkajcxcG5XWFUtS19qZTZ4WDJhWTdYdkhZTW1sRUFqTnRxaDA1RDFqYjh6aTNPNGpVM1VwUlNZRG1TSThVN29hWmcwZXhUeWdMUGdoRzJEQ3ZxSjFqNzY0M09WNGwzUGl0T0JYZldNVGloaExQaW84THNLSm1FS25VZ2x1Y1VjU0ZOVEtveW9jbUxKMjRfT21CYUFCVXR0XzNzRERIa1AwWTduVEx3dHRzcGlfRGc?oc=5"
+source_url: "https://news.google.com/rss/articles/CBMivwNBVV95cUxPMkRpUHU2djJsdlozUXNReG9rMU5aRXV3TG5QVExqRHl3UEh4QldORlk4cTBsMktzdXZhaHNzYjJuYWM0NEpYV0xDS0V1ampnMVg2LXFWS09jOVJqRkJhQ0VMNDF5RXl3R21TZUtabFVVcE50U3ZJSDBVcTVVRlI5aU5aUmlSTU5feWxodlJIdHBCQ2ZIVEdWb1hxbENDMUV6WjY0Y0EyemdzR1NWRFpSdGxpOGs5eHM1S0NLWHZmS0twRGdxUlRva1Q2bHZHMVM2TEdkQ0JRNldTUVBkTXc4MzF0Z3J1bDV5aHdnaVB5TGxULXl4NGw0andQaTJoM3ZpU0w0MVBfRzRsb25ma3poOFJ1Y3lwcG03aW93QWR0YTVyYWNaekU3d0dhU1U1a3dwY1Q4TFhJR3FXeEpIOVB2UnZEb2t3ZEdRcU5GNlZnOVBKMm5sak9KTjFweUF2N0hPa0pMZjZ6N2JDdkpYZURqemJaenRCLXJGajFPVkRkNnFzMUM1VTY4aDJzNjJHUzBYRE9aSGtuc2JhWUxWUC0xb05XTjhZWVlINVlfNEd4SGtUa01qc3BlblQyZ2x4V1k?oc=5"
 category: "監管動態"
-subcategory: "金融監管"
-region: "全球"
-companies: ["Bank of America"]
-keywords: ["Jeffrey Epstein", "美國銀行", "金融監管", "和解案件", "股價波動"]
+subcategory: "銀行監管"
+region: "美國"
+companies: ["美國銀行"]
+keywords: ["Jeffrey Epstein", "美國銀行", "監管責任", "性交易", "銀行監管"]
 importance: "高"
 source_type: "新聞媒體"
-collected_at: "2026-03-18T08:30:21.665923+08:00"
+collected_at: "2026-03-18T20:30:26.532526+08:00"
 collector: "auto-crawler"
 ---
 
@@ -19,25 +19,25 @@ collector: "auto-crawler"
 
 ## 摘要
 
-美國銀行同意與Jeffrey Epstein案件和解，美國法院表示。Jeffrey Epstein是一名已故的億萬富翁和性犯罪者，他與美國銀行有著密切的關係。美國銀行被控未能阻止Epstein的非法活動，包括兒童性交易。美國銀行同意支付未知的和解金額，條件是案件不會進入訴訟階段。這一決定可能會對美國銀行的聲譽和財務產生重大影響。美國銀行的股價可能會受到波動。這一事件也會引起關注，美國銀行是否足夠地處理與Epstein的關係。美國銀行的管理層可能會面臨質疑。這一事件也會影響美國銀行的品牌形象和信譽。美國銀行的客戶可能會對這一事件感到擔憂。這一事件也會影響美國銀行的業務發展。美國銀行的競爭對手可能會利用這一事件來攻擊美國銀行。這一事件也會影響美國銀行的股東。美國銀行的股東可能會對這一事件感到擔憂。這一事件也會影響美國銀行的財務狀況。美國銀行的財務狀況可能會受到波動。這一事件也會影響美國銀行的未來發展。美國銀行的未來發展可能會受到影響。
+根據WSJ報導，美國銀行同意與Jeffrey Epstein案件和解。Jeffrey Epstein是一名已故的億萬富翁和性交易者，他的死引發了對銀行和金融機構的關注。美國銀行在2019年被控與Epstein有關的性交易案件有關，銀行被控未能報告Epstein的不當行為。這起訴訟是對銀行的監管責任的一部分。美國銀行同意支付未知的和解金額，條件尚未公佈。這一決定可能會對銀行的聲譽和監管風險產生影響。這一事件也會對銀行的監管責任和對性交易的處理產生影響。根據專家，銀行需要提高對監管風險的意識和對不當行為的處理。這一事件也會對銀行的聲譽和監管風險產生影響。根據專家，銀行需要提高對監管風險的意識和對不當行為的處理。這一事件也會對銀行的聲譽和監管風險產生影響。根據專家，銀行需要提高對監管風險的意識和對不當行為的處理。
 
 ## 基本資訊
 
 | 欄位 | 內容 |
 |------|------|
 | 來源 | GNews: WSJ 保險 |
-| 地區 | 全球 |
-| 分類 | 監管動態 / 金融監管 |
+| 地區 | 美國 |
+| 分類 | 監管動態 / 銀行監管 |
 | 重要程度 | 高 |
-| 相關公司 | Bank of America |
+| 相關公司 | 美國銀行 |
 
 ## 關鍵字
 
-`Jeffrey Epstein` `美國銀行` `金融監管` `和解案件` `股價波動`
+`Jeffrey Epstein` `美國銀行` `監管責任` `性交易` `銀行監管`
 
 ## 原文連結
 
-[查看原文](https://news.google.com/rss/articles/CBMivwNBVV95cUxPODEtdjI2VlNJVGhkT0lhbFFZOEo1Yy1Ncm9CNjRqc3c1RVFZVHg4MmJpeU9pQ3BXZ2xRWjAya1FxSnozYlplS1dCdEp1VVN0cVphenUydFp5MWVWMnVoYW5kMGw5NWNmRkdXZWlSUlZKUHRoeFJGLXdKYVlXZ1lZN0hOa1VuREJMa2JzT3hnWkhpN3VyVzZXQl9Va2Y5NU1MdlJyM2NVRzdBeEVoakp1djUtdHRNRzFBcmNCZ0FxZzdtaFN2UVEydmptS21FdXFwVnpuX1pfZy1lMHBxVXJ1RGw2TzgwNlNTcWYyTGVObGhKX3B3ejQwVV9NRDlXeURabXUwU2N2VXYyZ2dfR0ZjTjZkajcxcG5XWFUtS19qZTZ4WDJhWTdYdkhZTW1sRUFqTnRxaDA1RDFqYjh6aTNPNGpVM1VwUlNZRG1TSThVN29hWmcwZXhUeWdMUGdoRzJEQ3ZxSjFqNzY0M09WNGwzUGl0T0JYZldNVGloaExQaW84THNLSm1FS25VZ2x1Y1VjU0ZOVEtveW9jbUxKMjRfT21CYUFCVXR0XzNzRERIa1AwWTduVEx3dHRzcGlfRGc?oc=5)
+[查看原文](https://news.google.com/rss/articles/CBMivwNBVV95cUxPMkRpUHU2djJsdlozUXNReG9rMU5aRXV3TG5QVExqRHl3UEh4QldORlk4cTBsMktzdXZhaHNzYjJuYWM0NEpYV0xDS0V1ampnMVg2LXFWS09jOVJqRkJhQ0VMNDF5RXl3R21TZUtabFVVcE50U3ZJSDBVcTVVRlI5aU5aUmlSTU5feWxodlJIdHBCQ2ZIVEdWb1hxbENDMUV6WjY0Y0EyemdzR1NWRFpSdGxpOGs5eHM1S0NLWHZmS0twRGdxUlRva1Q2bHZHMVM2TEdkQ0JRNldTUVBkTXc4MzF0Z3J1bDV5aHdnaVB5TGxULXl4NGw0andQaTJoM3ZpU0w0MVBfRzRsb25ma3poOFJ1Y3lwcG03aW93QWR0YTVyYWNaekU3d0dhU1U1a3dwY1Q4TFhJR3FXeEpIOVB2UnZEb2t3ZEdRcU5GNlZnOVBKMm5sak9KTjFweUF2N0hPa0pMZjZ6N2JDdkpYZURqemJaenRCLXJGajFPVkRkNnFzMUM1VTY4aDJzNjJHUzBYRE9aSGtuc2JhWUxWUC0xb05XTjhZWVlINVlfNEd4SGtUa01qc3BlblQyZ2x4V1k?oc=5)
 
 ---
-*自動收集於 2026-03-18 09:40 | 來源：GNews: WSJ 保險 | 分類：監管動態/金融監管*
+*自動收集於 2026-03-18 22:33 | 來源：GNews: WSJ 保險 | 分類：監管動態/銀行監管*
