@@ -1,17 +1,17 @@
 ---
-id: "22b62c479455"
+id: "37b06aabf115"
 title: "《peaky Blinders：The Immortal Man》影評：一部幫派劇的納粹陰謀"
 date: "2026-03-23"
 source: "GNews: WSJ 保險"
-source_url: "https://news.google.com/rss/articles/CBMiwANBVV95cUxPb1d2SC0yU3NmREJ6ZVJRRXNhQVVwWklPOTJCTEQwcW5XYlpGb3F4a1haM3dfZjVGNEFSVDVzVUo4V0s4UE0yZzNfczBhcVB2emFQb0lsWmlWbm5CWVhZcGx2X1RseEwxVkl3eGs5UkxLR2RTZjZ5MjlBLTF4dnlGNU9mZEU0b3RiR2ZGek1JeFVSZTZUbzYtMk1Jcmowb0VqbGstT1NnbmxMald0QlBSWFR1d3lFMVVUNjRuaXFJWmhhb1dmY09rQzBfNjg0Y3JHS1VJNFpibC1GM2JwQ1R1Qmh0YTRXUTRsWWxXOHlnNWdEWjA0YkFMdHlMTWUxWUIydTlfNVN3NUNNOGdmT1JUUjhRWGlMa1RON05vSW14ekNScmxQVFpucm5udmlNQVlsTXpKT3lSYzgxVGotdHB5czR4aTJpdW5OMFRMMVVkbjg5UWE4SjV2Z1NwQ2tpSzVPcjVSRl9TUFlfVkJrYUg4bFRIQWhJQWZiU0liYVdSaFNYVVAyUFpIaE5HTnhpc3EwX3NOc3d2allYQU9FZnZGYkRfTzBQaW9wWDYwdGhPdGIxUkRVSUhKT3VONmR4dlVq?oc=5"
-category: "監管動態"
-subcategory: "娛樂"
+source_url: "https://news.google.com/rss/articles/CBMiwANBVV95cUxPSlNzd2FSTEhSdEFnMm1tVzE0Y0xqa0pwUl9EcTZFSjkzQ2FWcHBXZTY3QmFZSEUtdnJhV3RVUTJZWFd2WWVuUVVyUXF3TGJXbS0xUHh6X1JqUU1DRFhHSEJzQlhnMVBEcWxIWjlUdXlLSzQ1TUVobkV3Wk5HVHlQMnc1eTUtdjZhRFlxOEVVaHdUaTQtY0ZPbFBFM2tCYVFOZWVRVV8yQVZLTGptb0R5Zjlacnhma2RxR2ItWWNMUVF4M05HRTRGN2hfUWdKamdiQXVtc3I1b0JVY2t0SlVxeHhUVTJfcFFDTWxMLWhvTnBWT0hKRkZjXzBOUUlpbl9MVE9qWDZvZjladzJxQUIwcFlUVmsyYUsxSU9IMHE1Qzlqa292X1hCUVlDV2FRR2x1NEFHSm5xTzdJcTVjcHlNc2x5ejNhWUpqNDkyd2h4cU8xaElKUmdFQW5CVE9rUUo5Q3JoWnhSenVhSnJVVndCajFHT1Y0cTVPZDd4eTZnLWxTY2IxSzlNNUJzN2duT0o0RDMzYVJpUEx1SGxzLU9jU1J3ejl6QjlxWU9GUzZSRlBPbWY2T2hCZWU4Y2VFbzdv?oc=5"
+category: "產品創新"
+subcategory: "娛樂產業"
 region: "全球"
-companies: []
-keywords: ["幫派劇", "納粹黨", "英國", "二戰", "影評"]
-importance: "低"
+companies: ["BBC"]
+keywords: ["幫派劇", "納粹陰謀", "英國電視劇", "BBC"]
+importance: "中"
 source_type: "新聞媒體"
-collected_at: "2026-03-23T08:30:21.385126+08:00"
+collected_at: "2026-03-23T20:30:23.444752+08:00"
 collector: "auto-crawler"
 ---
 
@@ -19,7 +19,7 @@ collector: "auto-crawler"
 
 ## 摘要
 
-《peaky Blinders：The Immortal Man》是一部英國幫派劇，講述了在二戰期間，一個幫派領袖與納粹黨的陰謀。影評家認為，這部劇的演員表現出色，幫派領袖的角色尤其令人印象深刻。然而，影評家也批評劇中一些場景過於血腥和暴力。整體而言，這部劇是一部令人印象深刻的幫派劇，值得觀看。
+《peaky Blinders：The Immortal Man》是一部英國幫派劇的新一集，劇情圍繞著納粹陰謀展開。影評人認為，這一集的劇情緊湊，角色發展充分，納粹陰謀的設定令人印象深刻。然而，某些角色的人物設定過於簡單，缺乏深度。整體而言，這一集的表現令人滿意，值得觀看。
 
 ## 基本資訊
 
@@ -27,17 +27,17 @@ collector: "auto-crawler"
 |------|------|
 | 來源 | GNews: WSJ 保險 |
 | 地區 | 全球 |
-| 分類 | 監管動態 / 娛樂 |
-| 重要程度 | 低 |
-| 相關公司 | — |
+| 分類 | 產品創新 / 娛樂產業 |
+| 重要程度 | 中 |
+| 相關公司 | BBC |
 
 ## 關鍵字
 
-`幫派劇` `納粹黨` `英國` `二戰` `影評`
+`幫派劇` `納粹陰謀` `英國電視劇` `BBC`
 
 ## 原文連結
 
-[查看原文](https://news.google.com/rss/articles/CBMiwANBVV95cUxPb1d2SC0yU3NmREJ6ZVJRRXNhQVVwWklPOTJCTEQwcW5XYlpGb3F4a1haM3dfZjVGNEFSVDVzVUo4V0s4UE0yZzNfczBhcVB2emFQb0lsWmlWbm5CWVhZcGx2X1RseEwxVkl3eGs5UkxLR2RTZjZ5MjlBLTF4dnlGNU9mZEU0b3RiR2ZGek1JeFVSZTZUbzYtMk1Jcmowb0VqbGstT1NnbmxMald0QlBSWFR1d3lFMVVUNjRuaXFJWmhhb1dmY09rQzBfNjg0Y3JHS1VJNFpibC1GM2JwQ1R1Qmh0YTRXUTRsWWxXOHlnNWdEWjA0YkFMdHlMTWUxWUIydTlfNVN3NUNNOGdmT1JUUjhRWGlMa1RON05vSW14ekNScmxQVFpucm5udmlNQVlsTXpKT3lSYzgxVGotdHB5czR4aTJpdW5OMFRMMVVkbjg5UWE4SjV2Z1NwQ2tpSzVPcjVSRl9TUFlfVkJrYUg4bFRIQWhJQWZiU0liYVdSaFNYVVAyUFpIaE5HTnhpc3EwX3NOc3d2allYQU9FZnZGYkRfTzBQaW9wWDYwdGhPdGIxUkRVSUhKT3VONmR4dlVq?oc=5)
+[查看原文](https://news.google.com/rss/articles/CBMiwANBVV95cUxPSlNzd2FSTEhSdEFnMm1tVzE0Y0xqa0pwUl9EcTZFSjkzQ2FWcHBXZTY3QmFZSEUtdnJhV3RVUTJZWFd2WWVuUVVyUXF3TGJXbS0xUHh6X1JqUU1DRFhHSEJzQlhnMVBEcWxIWjlUdXlLSzQ1TUVobkV3Wk5HVHlQMnc1eTUtdjZhRFlxOEVVaHdUaTQtY0ZPbFBFM2tCYVFOZWVRVV8yQVZLTGptb0R5Zjlacnhma2RxR2ItWWNMUVF4M05HRTRGN2hfUWdKamdiQXVtc3I1b0JVY2t0SlVxeHhUVTJfcFFDTWxMLWhvTnBWT0hKRkZjXzBOUUlpbl9MVE9qWDZvZjladzJxQUIwcFlUVmsyYUsxSU9IMHE1Qzlqa292X1hCUVlDV2FRR2x1NEFHSm5xTzdJcTVjcHlNc2x5ejNhWUpqNDkyd2h4cU8xaElKUmdFQW5CVE9rUUo5Q3JoWnhSenVhSnJVVndCajFHT1Y0cTVPZDd4eTZnLWxTY2IxSzlNNUJzN2duT0o0RDMzYVJpUEx1SGxzLU9jU1J3ejl6QjlxWU9GUzZSRlBPbWY2T2hCZWU4Y2VFbzdv?oc=5)
 
 ---
-*自動收集於 2026-03-23 09:27 | 來源：GNews: WSJ 保險 | 分類：監管動態/娛樂*
+*自動收集於 2026-03-23 23:02 | 來源：GNews: WSJ 保險 | 分類：產品創新/娛樂產業*
