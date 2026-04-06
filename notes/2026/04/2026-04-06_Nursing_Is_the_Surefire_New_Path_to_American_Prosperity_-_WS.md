@@ -1,9 +1,9 @@
 ---
-id: "f086b8c9743a"
+id: "9b5221b50603"
 title: "Nursing Is the Surefire New Path to American Prosperity - WSJ"
 date: "2026-04-06"
 source: "GNews: WSJ 保險"
-source_url: "https://news.google.com/rss/articles/CBMi_gJBVV95cUxQT19KaHd4aTdXZGpFTm0zQnRlc184UEJUWFc0WnRoUWNsWWJ0aHZUZHlmZjlpVXQ5aFE0TDUxamZLZWRlanlEVVlYOW9zalp3UmVQODh0eWRvUk1MZlc1eGdPSU1YV2p5RWR1SGxSakJWX1NQYjdneFNnSEg4Yk1xc0VxaEw1ek9OYk9RQzYwWjJhZy0yd3l5R1ZzaGR1cWNwZF81SXhJWjBya0cyd3QwdGw4VXhIUktKVXdBMHpDS1JaRW1UcnNUTlNhN2xtbnVmWFY1M2tUd3hfd1l6bDFjOE1ScmY4UEJnLU9qd0dLOVUwYmdfOXc4QU1TQjdRbEhiWjRKZy1NejRINnJPSzhNTjRla0JZcmZxX211THprZ1Z5SGE4UzEta2FucndkME1uQkt4dk1Makd3WDlJOXZCMXlyaGc5Y0dlQ3AxcmdGTUdXUC1uOFlYRFZTd3FYcFQ2YWROdEp1SU9SSDdDcFV2VHdwYjh3cFNxbDh1TmV3?oc=5"
+source_url: "https://news.google.com/rss/articles/CBMi_gJBVV95cUxQUEhud0dKdjgxVmEyRUppbmFxaUhMdUhQaWRRMzBLaE1MemNvTXN2dnBaQTg1Y0RTY2ZQZlI4b0lrXy1mdHRDU0g5dTJpdEduR0pBUU1ObVhoajdoeXZBV1JPWkZCSmZwbjdkVFRkTWtodkF5TUlKUTRKdnMzaXNRSloxZGVCR1pmdlZLTFNHRkNfaldROU1qNkJQUHRfU09ld2hubFowcDVkUzBEakVuYzJjR3FQODlvX0RuSk9QbEI3b1VtUmVRYWVpZllhUzdZd085Z29OaXljWWJUakRJWFpzdnFXYWo1WG5lYTE1MzJjX1JxTVI1RnhpeFhuTVNRdjRhZ3hFWWtfUTQ3cmNYZ3VmbHpuMlUzcF9yMFJQWWpock9OejBwR3JEMGpnLWlZWnlXUVBjV0NzeWV4WjNLTTBQUWplNkZ0VW4xeHpBQXJGcDVPMnloUXpoeFdqTnJhYjNVRXFocGo3d2FwTXlHSGNhU1VKMVRuZFFCMnhn?oc=5"
 category: "市場趨勢"
 subcategory: "一般資訊"
 region: "全球"
@@ -11,7 +11,7 @@ companies: []
 keywords: []
 importance: "低"
 source_type: "新聞媒體"
-collected_at: "2026-04-05T20:30:25.520812+08:00"
+collected_at: "2026-04-06T08:30:22.357605+08:00"
 collector: "auto-crawler"
 ---
 
@@ -37,7 +37,7 @@ collector: "auto-crawler"
 
 ## 原文連結
 
-[查看原文](https://news.google.com/rss/articles/CBMi_gJBVV95cUxQT19KaHd4aTdXZGpFTm0zQnRlc184UEJUWFc0WnRoUWNsWWJ0aHZUZHlmZjlpVXQ5aFE0TDUxamZLZWRlanlEVVlYOW9zalp3UmVQODh0eWRvUk1MZlc1eGdPSU1YV2p5RWR1SGxSakJWX1NQYjdneFNnSEg4Yk1xc0VxaEw1ek9OYk9RQzYwWjJhZy0yd3l5R1ZzaGR1cWNwZF81SXhJWjBya0cyd3QwdGw4VXhIUktKVXdBMHpDS1JaRW1UcnNUTlNhN2xtbnVmWFY1M2tUd3hfd1l6bDFjOE1ScmY4UEJnLU9qd0dLOVUwYmdfOXc4QU1TQjdRbEhiWjRKZy1NejRINnJPSzhNTjRla0JZcmZxX211THprZ1Z5SGE4UzEta2FucndkME1uQkt4dk1Makd3WDlJOXZCMXlyaGc5Y0dlQ3AxcmdGTUdXUC1uOFlYRFZTd3FYcFQ2YWROdEp1SU9SSDdDcFV2VHdwYjh3cFNxbDh1TmV3?oc=5)
+[查看原文](https://news.google.com/rss/articles/CBMi_gJBVV95cUxQUEhud0dKdjgxVmEyRUppbmFxaUhMdUhQaWRRMzBLaE1MemNvTXN2dnBaQTg1Y0RTY2ZQZlI4b0lrXy1mdHRDU0g5dTJpdEduR0pBUU1ObVhoajdoeXZBV1JPWkZCSmZwbjdkVFRkTWtodkF5TUlKUTRKdnMzaXNRSloxZGVCR1pmdlZLTFNHRkNfaldROU1qNkJQUHRfU09ld2hubFowcDVkUzBEakVuYzJjR3FQODlvX0RuSk9QbEI3b1VtUmVRYWVpZllhUzdZd085Z29OaXljWWJUakRJWFpzdnFXYWo1WG5lYTE1MzJjX1JxTVI1RnhpeFhuTVNRdjRhZ3hFWWtfUTQ3cmNYZ3VmbHpuMlUzcF9yMFJQWWpock9OejBwR3JEMGpnLWlZWnlXUVBjV0NzeWV4WjNLTTBQUWplNkZ0VW4xeHpBQXJGcDVPMnloUXpoeFdqTnJhYjNVRXFocGo3d2FwTXlHSGNhU1VKMVRuZFFCMnhn?oc=5)
 
 ---
-*自動收集於 2026-04-06 00:26 | 來源：GNews: WSJ 保險 | 分類：市場趨勢/一般資訊*
+*自動收集於 2026-04-06 12:59 | 來源：GNews: WSJ 保險 | 分類：市場趨勢/一般資訊*

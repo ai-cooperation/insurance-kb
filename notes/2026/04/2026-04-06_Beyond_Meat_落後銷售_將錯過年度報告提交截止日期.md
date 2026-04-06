@@ -1,17 +1,17 @@
 ---
-id: "08df04449099"
+id: "f54dffc86ae6"
 title: "Beyond Meat 落後銷售，將錯過年度報告提交截止日期"
 date: "2026-04-06"
 source: "GNews: WSJ 保險"
-source_url: "https://news.google.com/rss/articles/CBMiuwNBVV95cUxQR05GaktEQkZnTFFoN2treWQwbUVtemJqLTZlaDVvWkFBVElwNzItMWdkMlRTck0tTFFsZEY0SmZtdDhXUWV3cU1kVG1uUkk0LU14MkwwcnpkVVgtYjI3YzNxb0o3OF94aF8tLXEySlJkaUljYjhRODJJUk9tT1ZIa0ZiWk12akhtOUZ0b0RmQ1JLVDZYcjRlQmJyZmlIY1hrelZxdFFsRy1TSWlqQnpVM2liWTdPcTNnbXp2XzZVZkd3Z0JXelMtSWRyeUZ0T05HNkZtNDBLeTBGMFlURTJXVV9NdUpsYmNiUllJQnhIQ1ViSkQ3MDJoQkREV016YTRDZ3NVTlhUbmMwSmVrOC1VVVNaMlFieGNSWnFTYnB4WGQ3bHQ4RllxWXh4RDB5UkM3SldoclJybE1UOVRPb3gwVl9QRThmOFdZVVhXTFh3RVZxNVlJWFJPWXh5dXVtQlpmVEhMdmp4Q3ZxT3NpdVZ2UDNyZU5rZzVoUkI5c01nMFJvdVYwZzRJd2RPVjZwUXZRMU9HUUlnTU8yaDFMMV9XOWpvQXRObThPQVdJN09PZ09YdWZNXy1WMFJkUQ?oc=5"
-category: "監管動態"
-subcategory: "企業財務"
+source_url: "https://news.google.com/rss/articles/CBMiuwNBVV95cUxPenZvTmdOWFFVMVBteWY3cmRJVi1XbktER0ZkbnZEdFpCY1ZCU085bmR2dWNOOUI1Z3JIcW54SnBscWdRVXVmUGtaMmYxcVA1dUJadDU4bkhTQTlzN1VoLVVJVlE4MVR3N1habVdob0JaQmluSkJ5WU1uWjBZMEdQcFFMaHp3Smlya21IajZhcGJFeDFsdHZmanc1eUJxaU5RZlE0Y2JXMzQwSGZzdUV6bjZJbzBrSlVOaVlOcERzOE0yR21pQ0ZHcVNGSTRoTE5EVjQyd0lpbHpmSUNRM3hVb0JfZExxUnBsOXl3TTM3MjNIcm5neGg3ZHNvdjByQXFpNkYyM2p3X1dzSEdQRXJRUF9qMXlqenl4SXFYY1JoalNvZElfNm10alZfWnBUcXY1LVJTLWUzN29JQm5WcGE3anlIYXVJWHNCcU5UZnFZZmc2Z3hDZjlrSmtEeENyMTFIU21XOXl0RjNLbEhBZGhGVU1ZYkVOU21JN2dpM0VLNFhodjFMejZXRmRfcXVoZU54Z0U1S0xFVmJTOXRKYmNoZGozWkhlMERVY1J1WWJCc0otYzVlVzJMSEh1RQ?oc=5"
+category: "產品創新"
+subcategory: "食品業"
 region: "全球"
 companies: ["Beyond Meat"]
-keywords: ["Beyond Meat", "銷售下滑", "年度報告", "股價影響", "監管機構"]
+keywords: ["Beyond Meat", "植物基蛋白", "銷售額下滑", "年度報告", "股價"]
 importance: "高"
 source_type: "新聞媒體"
-collected_at: "2026-04-05T20:30:25.525906+08:00"
+collected_at: "2026-04-06T08:30:22.361177+08:00"
 collector: "auto-crawler"
 ---
 
@@ -19,7 +19,7 @@ collector: "auto-crawler"
 
 ## 摘要
 
-Beyond Meat 因銷售不振，將錯過年度報告提交截止日期。根據WSJ報導，Beyond Meat 的銷售額下滑，公司將延遲提交年度報告。這一消息對 Beyond Meat 的股價可能會產生重大影響。Beyond Meat 的銷售下滑可能與市場對其產品的需求下滑有關。公司可能會採取措施來改善銷售表現，例如調整產品線或加強市場推廣。然而，公司錯過年度報告提交截止日期可能會受到監管機構的懲罰。這一事件可能會對 Beyond Meat 的品牌形象和股價產生長期影響。Beyond Meat 的競爭對手可能會乘機加大市場份額。公司需要採取積極措施來改善銷售表現和恢復股價。
+Beyond Meat 因銷售額下滑，將錯過年度報告提交截止日期。根據WSJ報導，Beyond Meat 的銷售額下滑，公司將錯過年度報告提交截止日期。這一消息對 Beyond Meat 的股價可能會產生重大影響。Beyond Meat 的銷售額下滑可能是由於市場競爭加劇、消費者對植物基蛋白產品的需求下滑等因素所致。公司將需要采取措施來改善銷售額和恢復股價。這一事件對 Beyond Meat 的未來發展可能會產生重大影響。
 
 ## 基本資訊
 
@@ -27,17 +27,17 @@ Beyond Meat 因銷售不振，將錯過年度報告提交截止日期。根據WS
 |------|------|
 | 來源 | GNews: WSJ 保險 |
 | 地區 | 全球 |
-| 分類 | 監管動態 / 企業財務 |
+| 分類 | 產品創新 / 食品業 |
 | 重要程度 | 高 |
 | 相關公司 | Beyond Meat |
 
 ## 關鍵字
 
-`Beyond Meat` `銷售下滑` `年度報告` `股價影響` `監管機構`
+`Beyond Meat` `植物基蛋白` `銷售額下滑` `年度報告` `股價`
 
 ## 原文連結
 
-[查看原文](https://news.google.com/rss/articles/CBMiuwNBVV95cUxQR05GaktEQkZnTFFoN2treWQwbUVtemJqLTZlaDVvWkFBVElwNzItMWdkMlRTck0tTFFsZEY0SmZtdDhXUWV3cU1kVG1uUkk0LU14MkwwcnpkVVgtYjI3YzNxb0o3OF94aF8tLXEySlJkaUljYjhRODJJUk9tT1ZIa0ZiWk12akhtOUZ0b0RmQ1JLVDZYcjRlQmJyZmlIY1hrelZxdFFsRy1TSWlqQnpVM2liWTdPcTNnbXp2XzZVZkd3Z0JXelMtSWRyeUZ0T05HNkZtNDBLeTBGMFlURTJXVV9NdUpsYmNiUllJQnhIQ1ViSkQ3MDJoQkREV016YTRDZ3NVTlhUbmMwSmVrOC1VVVNaMlFieGNSWnFTYnB4WGQ3bHQ4RllxWXh4RDB5UkM3SldoclJybE1UOVRPb3gwVl9QRThmOFdZVVhXTFh3RVZxNVlJWFJPWXh5dXVtQlpmVEhMdmp4Q3ZxT3NpdVZ2UDNyZU5rZzVoUkI5c01nMFJvdVYwZzRJd2RPVjZwUXZRMU9HUUlnTU8yaDFMMV9XOWpvQXRObThPQVdJN09PZ09YdWZNXy1WMFJkUQ?oc=5)
+[查看原文](https://news.google.com/rss/articles/CBMiuwNBVV95cUxPenZvTmdOWFFVMVBteWY3cmRJVi1XbktER0ZkbnZEdFpCY1ZCU085bmR2dWNOOUI1Z3JIcW54SnBscWdRVXVmUGtaMmYxcVA1dUJadDU4bkhTQTlzN1VoLVVJVlE4MVR3N1habVdob0JaQmluSkJ5WU1uWjBZMEdQcFFMaHp3Smlya21IajZhcGJFeDFsdHZmanc1eUJxaU5RZlE0Y2JXMzQwSGZzdUV6bjZJbzBrSlVOaVlOcERzOE0yR21pQ0ZHcVNGSTRoTE5EVjQyd0lpbHpmSUNRM3hVb0JfZExxUnBsOXl3TTM3MjNIcm5neGg3ZHNvdjByQXFpNkYyM2p3X1dzSEdQRXJRUF9qMXlqenl4SXFYY1JoalNvZElfNm10alZfWnBUcXY1LVJTLWUzN29JQm5WcGE3anlIYXVJWHNCcU5UZnFZZmc2Z3hDZjlrSmtEeENyMTFIU21XOXl0RjNLbEhBZGhGVU1ZYkVOU21JN2dpM0VLNFhodjFMejZXRmRfcXVoZU54Z0U1S0xFVmJTOXRKYmNoZGozWkhlMERVY1J1WWJCc0otYzVlVzJMSEh1RQ?oc=5)
 
 ---
-*自動收集於 2026-04-06 00:26 | 來源：GNews: WSJ 保險 | 分類：監管動態/企業財務*
+*自動收集於 2026-04-06 12:59 | 來源：GNews: WSJ 保險 | 分類：產品創新/食品業*
