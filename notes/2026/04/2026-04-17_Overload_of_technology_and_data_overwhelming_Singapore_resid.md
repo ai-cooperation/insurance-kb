@@ -1,0 +1,43 @@
+---
+id: "24c281d813e2"
+title: "Overload of technology and data overwhelming Singapore residents and their wellness journey: AIA Live Better Study - The Manila Times"
+date: "2026-04-17"
+source: "GNews: 新加坡保險公司 (1)"
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxQblJyTk45a2F1OVRIS3RQWi1zbFNuOFdQanEtRTI0TE5UYUFuYlQyWGlxYTBoVkNnazJkYkgzRHJJUVIzczVSOV9iU2hUaUJrdlBTZVJMUTRDQjNiNTR4d0oxaHVhZGlFQl9mWV9ZM1oyYTNzXzZOellvMzhDZTAxakVMOEczLUVYclNucEZDbG9pQUtydGtEam1sMl8yaTdoVl93QTlQRWZhekFiV19hRk1EWWRuYjVTNk5yeUFNcFlRMFRmRUFuaVp2ZDJLNUlKeHl0d1lURXJKanVpLUJzai1XWUpycnA4bGhXNnFNYU51MUdpOHVnQzhLV19uRjUybEY3Z191OFhyYlNUMENsZlNySdIBmAJBVV95cUxQSm5USGtad1RXTC1EQkRNWF9idG01ejhkc1NDQkNNUlRwRHAwM3BWR0ZiLTRlNDFxNDEyOTlFcnZZUnhCUHFvWEk0c1Zsci11LTNURXR4X0FEeUNlRlI2OTVkQU1OYTdOMWVSLVh5Wnpqd3R6REROLXlPM3JMaWlObDg2LVBoRkhicVczNmwzSk9pR1UxaUtpOG51SExITHFETGxtRnVTTFBnOW85czFVSFV5dEh5R0NkaGotX2lld2NJcUpsZTJaTGRLNzhHbU1Zd0hLUmdFLW5hNnI2UnBXa3Z6dkxmY3lQU0VwaWlNVGpWWlYzV2ZZM3o1Y20zZUtVZEdQczUxQW1NZUxXcjJpSks1WVg5c2Nr?oc=5"
+category: ""
+subcategory: ""
+region: "新加坡"
+companies: []
+keywords: []
+importance: "低"
+source_type: "新聞聚合"
+collected_at: "2026-04-17T21:18:23.577927+08:00"
+collector: "auto-crawler"
+---
+
+# Overload of technology and data overwhelming Singapore residents and their wellness journey: AIA Live Better Study - The Manila Times
+
+## 摘要
+
+Overload of technology and data overwhelming Singapore residents and their wellness journey: AIA Live Better Study  The Manila Times
+
+## 基本資訊
+
+| 欄位 | 內容 |
+|------|------|
+| 來源 | GNews: 新加坡保險公司 (1) |
+| 地區 | 新加坡 |
+| 分類 |  /  |
+| 重要程度 |  |
+| 相關公司 | — |
+
+## 關鍵字
+
+
+
+## 原文連結
+
+[查看原文](https://news.google.com/rss/articles/CBMikwJBVV95cUxQblJyTk45a2F1OVRIS3RQWi1zbFNuOFdQanEtRTI0TE5UYUFuYlQyWGlxYTBoVkNnazJkYkgzRHJJUVIzczVSOV9iU2hUaUJrdlBTZVJMUTRDQjNiNTR4d0oxaHVhZGlFQl9mWV9ZM1oyYTNzXzZOellvMzhDZTAxakVMOEczLUVYclNucEZDbG9pQUtydGtEam1sMl8yaTdoVl93QTlQRWZhekFiV19hRk1EWWRuYjVTNk5yeUFNcFlRMFRmRUFuaVp2ZDJLNUlKeHl0d1lURXJKanVpLUJzai1XWUpycnA4bGhXNnFNYU51MUdpOHVnQzhLV19uRjUybEY3Z191OFhyYlNUMENsZlNySdIBmAJBVV95cUxQSm5USGtad1RXTC1EQkRNWF9idG01ejhkc1NDQkNNUlRwRHAwM3BWR0ZiLTRlNDFxNDEyOTlFcnZZUnhCUHFvWEk0c1Zsci11LTNURXR4X0FEeUNlRlI2OTVkQU1OYTdOMWVSLVh5Wnpqd3R6REROLXlPM3JMaWlObDg2LVBoRkhicVczNmwzSk9pR1UxaUtpOG51SExITHFETGxtRnVTTFBnOW85czFVSFV5dEh5R0NkaGotX2lld2NJcUpsZTJaTGRLNzhHbU1Zd0hLUmdFLW5hNnI2UnBXa3Z6dkxmY3lQU0VwaWlNVGpWWlYzV2ZZM3o1Y20zZUtVZEdQczUxQW1NZUxXcjJpSks1WVg5c2Nr?oc=5)
+
+---
+*自動收集於 2026-04-17 21:19 | 來源：GNews: 新加坡保險公司 (1) | 分類：/*

@@ -1,0 +1,43 @@
+---
+id: "d62462d1b593"
+title: "How Older Adults Are Using V.R. to Counter Social Isolation - The New York Times"
+date: "2026-04-17"
+source: "GNews: NYT 保險"
+source_url: "https://news.google.com/rss/articles/CBMioAFBVV95cUxObFo2UUR4ZlRFN09RYWxyeERhbVkzQkFQNDRxc1g1dkxBUVJLZmI4TDhlTTZPZWNrNnB3Z0RDTV9mRzBWWk9ObllkY3VxLUhtWGdsTFJTQ0tMTFBTbGMzT2JQd09nSUJMRE11XzZuaURMOGVpYklOTGVpeEYzUkFpcFIyLUhHUW91V2hoTXMzSXpYQmdQR3cxUmhtc3MtUzlY?oc=5"
+category: ""
+subcategory: ""
+region: "全球"
+companies: []
+keywords: []
+importance: "低"
+source_type: "新聞媒體"
+collected_at: "2026-04-17T21:18:46.370537+08:00"
+collector: "auto-crawler"
+---
+
+# How Older Adults Are Using V.R. to Counter Social Isolation - The New York Times
+
+## 摘要
+
+How Older Adults Are Using V.R. to Counter Social Isolation  The New York Times
+
+## 基本資訊
+
+| 欄位 | 內容 |
+|------|------|
+| 來源 | GNews: NYT 保險 |
+| 地區 | 全球 |
+| 分類 |  /  |
+| 重要程度 |  |
+| 相關公司 | — |
+
+## 關鍵字
+
+
+
+## 原文連結
+
+[查看原文](https://news.google.com/rss/articles/CBMioAFBVV95cUxObFo2UUR4ZlRFN09RYWxyeERhbVkzQkFQNDRxc1g1dkxBUVJLZmI4TDhlTTZPZWNrNnB3Z0RDTV9mRzBWWk9ObllkY3VxLUhtWGdsTFJTQ0tMTFBTbGMzT2JQd09nSUJMRE11XzZuaURMOGVpYklOTGVpeEYzUkFpcFIyLUhHUW91V2hoTXMzSXpYQmdQR3cxUmhtc3MtUzlY?oc=5)
+
+---
+*自動收集於 2026-04-17 21:19 | 來源：GNews: NYT 保險 | 分類：/*
